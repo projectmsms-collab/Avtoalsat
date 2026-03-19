@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azərbaycanda Alınacaq Ən Yaxşı 20 Büdcəli Avtomobil (2026)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.7;
+  }
+  .cover {
+    background: linear-gradient(135deg, #0d3b6e 0%, #1a6eb5 60%, #2196f3 100%);
+    color: white;
+    padding: 60px 40px 50px;
+    text-align: center;
+  }
+  .cover h1 { font-size: 2.6em; font-weight: 800; margin-bottom: 10px; letter-spacing: -1px; }
+  .cover .subtitle { font-size: 1.15em; opacity: 0.88; margin-bottom: 18px; }
+  .cover .meta { font-size: 0.92em; opacity: 0.7; }
+  .flag { font-size: 2em; margin-bottom: 12px; }
+
+  .intro-box {
+    background: white;
+    max-width: 900px;
+    margin: 32px auto;
+    border-radius: 12px;
+    padding: 28px 36px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .intro-box h2 { color: #0d3b6e; margin-bottom: 10px; font-size: 1.3em; }
+  .intro-box p { color: #444; margin-bottom: 8px; }
+
+  .toc {
+    background: #eaf3fb;
+    max-width: 900px;
+    margin: 0 auto 32px;
+    border-radius: 12px;
+    padding: 24px 36px;
+    border-left: 5px solid #1a6eb5;
+  }
+  .toc h3 { color: #0d3b6e; margin-bottom: 12px; }
+  .toc ol { padding-left: 20px; }
+  .toc li { margin-bottom: 4px; }
+  .toc a { color: #1a6eb5; text-decoration: none; font-weight: 500; }
+  .toc a:hover { text-decoration: underline; }
+
+  .car-card {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto 28px;
+    border-radius: 14px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .car-header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #0d3b6e, #1a6eb5);
+    color: white;
+    padding: 18px 28px;
+    gap: 16px;
+  }
+  .car-num {
+    font-size: 2em;
+    font-weight: 900;
+    opacity: 0.35;
+    min-width: 52px;
+    text-align: center;
+  }
+  .car-title h2 { font-size: 1.35em; font-weight: 700; margin-bottom: 2px; }
+  .car-title .tagline { font-size: 0.88em; opacity: 0.8; }
+  .badge {
+    margin-left: auto;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.82em;
+    white-space: nowrap;
+  }
+
+  .car-body { padding: 24px 28px; }
+  .quick-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .fact {
+    background: #f0f6ff;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 0.85em;
+    color: #1a6eb5;
+    font-weight: 600;
+  }
+  .fact span { color: #444; font-weight: 400; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 12px 0;
+  }
+  .pros, .cons {
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .pros { background: #f0faf4; border-left: 4px solid #2e9e5a; }
+  .cons { background: #fff3f3; border-left: 4px solid #d44; }
+  .pros h4 { color: #2e9e5a; margin-bottom: 8px; font-size: 0.9em; }
+  .cons h4 { color: #d44; margin-bottom: 8px; font-size: 0.9em; }
+  .pros ul, .cons ul { padding-left: 17px; }
+  .pros li, .cons li { margin-bottom: 4px; font-size: 0.9em; color: #333; }
+
+  .verdict {
+    background: #f8f5ff;
+    border-left: 4px solid #7c3aed;
+    border-radius: 0 10px 10px 0;
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-size: 0.93em;
+    color: #333;
+  }
+  .verdict strong { color: #7c3aed; }
+
+  .overview { font-size: 0.95em; color: #444; margin-bottom: 4px; }
+
+  .footer-section {
+    background: #0d3b6e;
+    color: white;
+    text-align: center;
+    padding: 36px 24px;
+    margin-top: 40px;
+  }
+  .footer-section h3 { margin-bottom: 10px; }
+  .footer-section p { opacity: 0.75; font-size: 0.9em; }
+
+  .photo-slot {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #e8f0fb 0%, #d0e4f7 100%);
+    border-bottom: 2px dashed #a0bfe0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #5580aa;
+    font-size: 0.92em;
+    position: relative;
+    overflow: hidden;
+  }
+  .photo-slot .photo-icon { font-size: 2.8em; opacity: 0.5; }
+  .photo-slot .photo-label { font-weight: 700; font-size: 1em; color: #2a5a8a; }
+  .photo-slot .photo-hint { font-size: 0.8em; opacity: 0.7; }
+  .photo-slot input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  .photo-slot img.preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    inset: 0;
+  }
+
+  @media (max-width: 640px) {
+    .pros-cons { grid-template-columns: 1fr; }
+    .car-header { flex-wrap: wrap; }
+    .badge { margin-left: 0; margin-top: 8px; }
+    .cover h1 { font-size: 1.8em; }
+    .car-body, .car-header { padding: 16px; }
+    .intro-box, .toc { padding: 20px; }
+  }
+</style>
+<script>
+  // Store all image data in memory
+  const imageStore = {};
+
+  function handlePhoto(input, id) {
+    const file = input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+      const base64 = e.target.result;
+      imageStore[id] = base64;
+
+      const slot = document.getElementById(id);
+      const img = slot.querySelector('img.preview');
+      img.src = base64;
+      img.style.display = 'block';
+      slot.querySelectorAll('.photo-icon, .photo-label, .photo-hint').forEach(el => el.style.display = 'none');
+
+      updateSaveButton();
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function updateSaveButton() {
+    const btn = document.getElementById('saveBtn');
+    const count = Object.keys(imageStore).length;
+    if (count > 0) {
+      btn.style.display = 'flex';
+      btn.querySelector('.save-count').textContent = count + ' şəkil əlavə edilib';
+    }
+  }
+
+  function saveHTML() {
+    const btn = document.getElementById('saveBtn');
+    btn.querySelector('.save-text').textContent = 'Hazırlanır...';
+    btn.style.opacity = '0.7';
+
+    setTimeout(() => {
+      let html = document.documentElement.outerHTML;
+
+      // Embed each image as base64 directly into the src of preview imgs
+      for (const [id, base64] of Object.entries(imageStore)) {
+        // Replace the empty src of the preview img inside this slot
+        const escaped = id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(
+          '(<div class="photo-slot" id="' + escaped + '">[\\s\\S]*?<img class="preview" src=")[^"]*(")',
+          'g'
+        );
+        html = html.replace(regex, '$1' + base64 + '$2');
+      }
+
+      // Also inject a script to show previews on load (since display:none)
+      const autoShowScript = `<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.photo-slot img.preview').forEach(function(img) {
+      if (img.src && img.src.startsWith('data:')) {
+        img.style.display = 'block';
+        var slot = img.closest('.photo-slot');
+        slot.querySelectorAll('.photo-icon, .photo-label, .photo-hint').forEach(function(el) {
+          el.style.display = 'none';
+        });
+      }
+    });
+  });
+<\/script>`;
+      html = html.replace('</body>', autoShowScript + '</body>');
+
+      const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'azerbaycan_ucuz_avtomobiller.html';
+      a.click();
+      URL.revokeObjectURL(url);
+
+      btn.querySelector('.save-text').textContent = '💾 HTML-i Saxla & Yüklə';
+      btn.style.opacity = '1';
+    }, 100);
+  }
+</script>
+
+<!-- Floating Save Button -->
+<div id="saveBtn" style="display:none; position:fixed; bottom:28px; right:28px; z-index:9999;
+  background:linear-gradient(135deg,#1a6eb5,#0d3b6e); color:white; border:none;
+  border-radius:50px; padding:14px 24px; cursor:pointer; box-shadow:0 4px 20px rgba(0,0,0,0.3);
+  flex-direction:column; align-items:center; gap:3px; font-family:'Segoe UI',Arial,sans-serif;"
+  onclick="saveHTML()">
+  <span class="save-text" style="font-size:1em; font-weight:700;">💾 HTML-i Saxla & Yüklə</span>
+  <span class="save-count" style="font-size:0.75em; opacity:0.85;"></span>
+</div>
+</head>
+<body>
+
+<div class="cover">
+  <div class="flag">🇦🇿</div>
+  <h1>Azərbaycanda Ən Yaxşı 20 Büdcəli Avtomobil</h1>
+  <p class="subtitle">Azərbaycan yolları və iqlimi üçün etibarlı, sərfəli və sınaqdan keçirilmiş avtomobillər</p>
+  <p class="meta">Ətraflı Alıcı Bələdçisi · 2026-cı il nəşri · Bakı və ətrafı</p>
+</div>
+
+<div class="intro-box">
+  <h2>Bu Bələdçi Nə Üçündür?</h2>
+  <p>Azərbaycanın avtomobil bazarı sürətlə inkişaf edir — 2025-ci ildə yeni avtomobil satışları 114%-dən çox artmış, Çin brendləri etibarlı Yaponiya və Koreya modelləri ilə yanaşı bazara hakim olmağa başlamışdır. Lakin Bakıda və ölkə daxilindəki büdcəyə həssas alıcılar üçün əsas prioritetlər dəyişməz qalır: <strong>qarışıq yollarda etibarlılıq</strong>, <strong>sərfəli ehtiyat hissələri</strong>, təmir ustalarına asan çıxış imkanı və <strong>yanacaq qənaəti</strong>.</p>
+  <p>Bu bələdçi bu tələbləri ödəyən 20 avtomobili əhatə edir. Hər giriş tam icmal, tövsiyə səbəbləri, real çatışmazlıqlar, sürətli faktlar və Azərbaycan kontekstinə uyğun yekun qiymətləndirmə ehtiva edir.</p>
+  <p><em>Qiymət aralıqları Azərbaycanda mövcud modellərin təxmini ikinci əl bazar qiymətləridir (AZN). Cari qiymətləri Turbo.az və ya AvtoBaku.com-da yoxlayın.</em></p>
+</div>
+
+<div class="toc">
+  <h3>📋 Mündəricat</h3>
+  <ol>
+    <li><a href="#car1">Toyota Corolla (E160/E170, 2013–2019)</a></li>
+    <li><a href="#car2">Hyundai Elantra (2010–2016)</a></li>
+    <li><a href="#car3">Kia Rio (2011–2017)</a></li>
+    <li><a href="#car4">Lada Vesta (2015–indiyədək)</a></li>
+    <li><a href="#car5">Chevrolet Cobalt (2012–2022)</a></li>
+    <li><a href="#car6">Hyundai Accent / Solaris (2010–2017)</a></li>
+    <li><a href="#car7">Toyota Yaris / Vitz (2005–2016)</a></li>
+    <li><a href="#car8">Kia Cerato / Forte (2013–2018)</a></li>
+    <li><a href="#car9">Nissan Almera / Sentra (2013–2018)</a></li>
+    <li><a href="#car10">Chery Tiggo 4 Pro (2022–indiyədək)</a></li>
+    <li><a href="#car11">Mitsubishi Lancer (2007–2015)</a></li>
+    <li><a href="#car12">Honda Civic (2006–2015)</a></li>
+    <li><a href="#car13">Suzuki Swift (2010–2017)</a></li>
+    <li><a href="#car14">Renault Logan / Dacia Logan (2013–2020)</a></li>
+    <li><a href="#car15">Changan CS35 Plus (2019–2023)</a></li>
+    <li><a href="#car16">Ford Focus (2011–2018)</a></li>
+    <li><a href="#car17">Volkswagen Polo (2010–2019)</a></li>
+    <li><a href="#car18">Geely Emgrand EC7 (2014–2020)</a></li>
+    <li><a href="#car19">Toyota Camry XV50 (2011–2017)</a></li>
+    <li><a href="#car20">Haval Jolion (2021–indiyədək)</a></li>
+  </ol>
+</div>
+
+<!-- ===================== CAR 1 ===================== -->
+<div class="car-card" id="car1">
+  <div class="car-header">
+    <div class="car-num">01</div>
+    <div class="car-title">
+      <h2>Toyota Corolla (E160/E170) — 2013–2019</h2>
+      <div class="tagline">Azərbaycanda etibarlılığın mübahisəsiz lideri</div>
+    </div>
+    <div class="badge">⭐ Redaktorun Seçimi</div>
+  </div>
+  <div class="photo-slot" id="photo1">
+    <img class="preview" src="" alt="Toyota Corolla">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Toyota Corolla (2013–2019)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo1')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~12,000–28,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Əla mövcudluq</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★★</span></div>
+    </div>
+    <p class="overview">Toyota Corolla mübahisəsiz şəkildə Azərbaycan yollarında ən çox güvənilən avtomobildir. İkinci əl bazarında böyük bir iştirakı var və Bakı ilə regional şəhərlərdəki usta və ehtiyat hissə təchizatçılarının müqayisəsiz dəstək şəbəkəsindən faydalanır. 1.6L və 1.8L atmosfer benzin mühərrikləri əfsanəvi dərəcədə davamlıdır, texniki xidmət üçün sadədir və saxlanması rahatdır.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Güllə keçirməz 1.6L / 1.8L mühərrik — elementar baxımla 300,000 km-i asanlıqla keçir</li>
+          <li>Ehtiyat hissələri Azərbaycandakı bütün avtomobillər arasında ən ucuz və ən geniş yayılmışdır</li>
+          <li>Bakıdakı (və əksər şəhərlərdəki) hər usta bu avtomobili mükəmməl tanıyır</li>
+          <li>Bakı şəhər tıxacları və şəhərlərarası magistral sürüş üçün rahatdır</li>
+          <li>Çox yüksək satış dəyəri — yaxşı qiymətə satmaq asandır</li>
+          <li>CVT və 6-sürətli avtomat seçimləri şəhər trafiki üçün etibarlıdır</li>
+          <li>Yük yeri genişdir — 372L, ailə istifadəsi üçün idealdır</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Ən populyar avtomobil həm də ən çox oğurlanan deməkdir — mühafizə sistemi vacibdir</li>
+          <li>Xəzər sahilindəki köhnə modellər paslanmaya meyillidir</li>
+          <li>CVT ötürücüsü diqqətsizlik olduqda dəyişdirmə xərci yüksək ola bilər</li>
+          <li>Qiymətlər ekvivalent yaş/yürüş üçün rəqiblərdən yüksəkdir</li>
+          <li>Salon keyfiyyəti orta səviyyədədir — bir qədər sadə görünür</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Bu siyahıdan yalnız bir avtomobil seçə biləcəksinizsə, Corolla seçin. Azərbaycandakı hər büdcəli alıcı üçün, xüsusilə ilk dəfə ikinci əl alırsınızsa, bu ən təhlükəsiz və ağlabatan seçimdir. Nüfuzunu tamamilə haqq edir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 2 ===================== -->
+<div class="car-card" id="car2">
+  <div class="car-header">
+    <div class="car-num">02</div>
+    <div class="car-title">
+      <h2>Hyundai Elantra (2010–2016)</h2>
+      <div class="tagline">Zərif hissi olan Koreya dəyəri</div>
+    </div>
+    <div class="badge">💎 Ən Yaxşı Dəyər</div>
+  </div>
+  <div class="photo-slot" id="photo2">
+    <img class="preview" src="" alt="Hyundai Elantra">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Hyundai Elantra (2010–2016)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo2')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~8,000–18,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Çox yaxşı mövcudluq</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Hyundai Azərbaycanda ən çox satılan brendlərdən biridir, bu da Elantra-nın çox güclü ehtiyat hissə və servis şəbəkəsindən yararlanmasını təmin edir. Bu nəsil Elantra, qiymət sinifindən üstün bir dəyər təqdim edən şık görünüş, geniş salon və rahat sürüş keyfiyyətini birləşdirir. Minlərlə elan ilə Turbo.az-da daimi sevilən avtomobildir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Sinif üçün əla salon sahəsi — arxa sərnişinlər xüsusilə rahatdır</li>
+          <li>Hyundai dilerlərı və müstəqil ustalar Bakı boyunca geniş yayılmışdır</li>
+          <li>Yeni liftbek modellər (2014+) büdcə qiymətinə premium görünüş təklif edir</li>
+          <li>6-sürətli avtomat şəhər trafikında hamar və etibarlıdır</li>
+          <li>Ən yaxşı xüsusiyyət/qiymət nisbətlərindən biri: isitmə oturacaqları, arxa kamera çox vaxt standartdır</li>
+          <li>Dövrü üçün güclü konstruksiya keyfiyyəti — kuzov panelləri yaxşı saxlanır</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Köhnə modellər (2010–2012) avtomat sürət qutusunda bəzi etibarlılıq problemləri var</li>
+          <li>Asqı rahatlıq üçün, davamlılıq üçün deyil qurulub — çuxurlar zamanla əziyyət verir</li>
+          <li>8+ il köhnə olduqda qapı altlarında və təkər qövslərində pas görünür</li>
+          <li>Baza komplektasiyasında salon plastikləri ucuz hiss verir</li>
+          <li>Corolla və ya Kia Rio qədər yanacaq qənaətcil deyil</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Daha aşağı başlanğıc qiyməti ilə Corolla səviyyəsində təcrübə istəyirsinizsə, çox ağıllı seçimdir. Elantra etibarlı, rahat və Azərbaycanda istifadəsi çox asandır. İlk dəfə alıcılar və ailələr üçün çox tövsiyə edilir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 3 ===================== -->
+<div class="car-card" id="car3">
+  <div class="car-header">
+    <div class="car-num">03</div>
+    <div class="car-title">
+      <h2>Kia Rio (2011–2017)</h2>
+      <div class="tagline">Şəhər sürücüsünün mükəmməl yoldaşı</div>
+    </div>
+    <div class="badge">🏙️ Ən Yaxşı Şəhər Avtomobili</div>
+  </div>
+  <div class="photo-slot" id="photo3">
+    <img class="preview" src="" alt="Kia Rio">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Kia Rio (2011–2017)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo3')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~6,000–14,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>5.5–6.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Çox yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Kia Rio, Bakı sürücüsünün ala biləcəyi ən praktik avtomobillərdən biridir. Dar şəhər küçələrini keçmək və kiçik yerlərdə park etmək üçün kifayət qədər kompaktdır, lakin gündəlik ailə istifadəsi üçün kifayət qədər praktikdir. Kia 2011–2017 nəsli boyunca böyük həcmdə satdı ki, bu da ikinci əl tədarükünün bol olduğunu və ehtiyat hissələrinin hər yerdə mövcud olduğunu bildirir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Mükəmməl yanacaq qənaəti — Bakının sıx şəhər trafiki üçün idealdır</li>
+          <li>Etibarlı Koreya avtomobilinə ən əlçatan başlanğıc nöqtələrindən biri</li>
+          <li>Kiçik xarici görünüş, lakin 4 yetkin üçün təəccüblü dərəcədə geniş salon</li>
+          <li>Hyundai Accent ilə çox hissəni bölüşür — ehtiyat hissə mövcudluğu ikiqat olur</li>
+          <li>Sadə, sınaqdan keçirilmiş 1.4L və 1.6L mühərriklər — texniki xidməti çox ucuzdur</li>
+          <li>Bakının sıx məhəllələrində park etmək asandır</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Kiçik yük yeri (295L) — çox baqaj daşıyırsınızsa ideal deyil</li>
+          <li>Magistrallarda yol səs-küyü nəzərə çarpır</li>
+          <li>Magistrallarda gücü çatmır — ötmə manevri planlaşdırma tələb edir</li>
+          <li>Arxa oturacaq uzun səfərlərdə hündür boylu sərnişinlər üçün sıxdır</li>
+          <li>Kondisioner pik Azərbaycan yay istisində (+35°C) bir az mübarizə aparır</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Kia Rio əsasən Bakıda sürən tək sürücülər və ya cütlər üçün əla seçimdir. Ucuz idarəetmə, ucuz təmir, asan satış. Daha çox yerə ehtiyacınız varsa, Cerato-ya keçin.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 4 ===================== -->
+<div class="car-card" id="car4">
+  <div class="car-header">
+    <div class="car-num">04</div>
+    <div class="car-title">
+      <h2>Lada Vesta (2015–indiyədək)</h2>
+      <div class="tagline">Müasir Rusiya, büdcə qiyməti — ciddi dəyər</div>
+    </div>
+    <div class="badge">🪙 Ən Ucuz Yeni Seçim</div>
+  </div>
+  <div class="photo-slot" id="photo4">
+    <img class="preview" src="" alt="Lada Vesta">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Lada Vesta (2015–indiyədək)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo4')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~9,000–16,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Əla (geniş stokda)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Lada Vesta buraxılışda bir çox tənqidçini təəccübləndirən gerçəkdən müasir bir Rusiya avtomobilidir. Renault-Nissan Alliance platformasından istifadə edir, yəni əsas mexanika sınaqdan keçirilmişdir. Azərbaycanda Lada tarixi olaraq ən çox satılan brendlərdən biri olmuşdur, bu da müstəqil ustaların texniki xidmət göstərməkdə çox rahat olduğunu bildirir. Vesta möhkəm, bəzəksiz bir iş atıdır.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Bazardakı ən əlçatan yeni avtomobillərdən biri</li>
+          <li>Ehtiyat hissələri son dərəcə ucuz və bütün Azərbaycanda mövcuddur</li>
+          <li>Quru yerdən klirensi genişdir — pis yollarda əksər sedanlardan yaxşıdır</li>
+          <li>Salon müasir, geniş və qiymətə görə praktikdir</li>
+          <li>Atmosfer mühərrikləri sadə və möhkəmdir</li>
+          <li>Uzun aks məsafəsi arxada ağlabatan ayaq yeri deməkdir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Konstruksiya keyfiyyətinin qeyri-ardıcıllıqları — bəzi bölmələrdə yığım qüsurları (cırıltı, boşluqlar)</li>
+          <li>Salon keyfiyyəti eyni qiymətdəki Koreya rəqiblərindən geridə qalır</li>
+          <li>Yenidən satış dəyəri Yapon və ya Koreya alternativlərindən aşağıdır</li>
+          <li>AMT (avtomatlaşdırılmış mexaniki) sürət qutusu sarsaq və kobud hərəkət edir</li>
+          <li>Prestijli avtomobil kimi qəbul edilmir — ictimai qavrayışa təsir edə bilər</li>
+          <li>Bəzi spesifik ehtiyat hissələrinin mövcudluğu Rusiyaya tətbiq edilən sanksiyalar səbəbindən təsirə məruz qalmışdır</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Büdcə mütləq prioritet olarsa və daha yeni avtomobil lazımdırsa, Vesta təəccüblü dəyər təqdim edir. Sadəcə cilalanmada bəzi güzəştlər gözləyin və ehtiyat hissəsi logistikasının bəzən çətin ola biləcəyini bilin. Praktik seçim, arzulanan seçim deyil.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 5 ===================== -->
+<div class="car-card" id="car5">
+  <div class="car-header">
+    <div class="car-num">05</div>
+    <div class="car-title">
+      <h2>Chevrolet Cobalt (2012–2022)</h2>
+      <div class="tagline">Özbəkistanın ixrac uğuru — Xəzər bölgəsinə uyğun</div>
+    </div>
+    <div class="badge">🚗 Bölgənin Sevimlisi</div>
+  </div>
+  <div class="photo-slot" id="photo5">
+    <img class="preview" src="" alt="Chevrolet Cobalt">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Chevrolet Cobalt (2012–2022)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo5')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~7,000–16,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">GM Uzbekistan tərəfindən Özbəkistanda istehsal edilən Chevrolet Cobalt, sərfəli, praktik bir sedan olaraq Qafqaz bazarını doldurdu. Sınaqdan keçirilmiş 1.5L mühərrik istifadə edir və həm mexaniki, həm də avtomatik variantlarda mövcuddur. Azərbaycanda taksi və ailə avtomobili kimi möhkəm bir nüfuzunu qoruyur ki, bu da mexanik şəbəkəsinin yaxşı qurulduğu anlamına gəlir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Mükəmməl qiymət/həcm nisbəti — geniş salon və böyük 530L yük yeri</li>
+          <li>Sadə, sınaqdan keçirilmiş mühərrik, asan özünü təmir imkanı</li>
+          <li>İkinci əl nümunələrinin güclü arzı rəqabətli qiymətlər deməkdir</li>
+          <li>Uzun yol səfərləri üçün rahat — Bakıdan Şəkiyə qədər</li>
+          <li>Sedan üçün yaxşı quru yerdən klirensi</li>
+          <li>Kondisioner Azərbaycan yayının istisini yaxşı idarə edir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Yapon və ya Koreya alternativləri qədər yaxşı qurulmayıb</li>
+          <li>Taksilərlə güclü əlaqəsi var — ikinci əl imici narahatlıq yarada bilər</li>
+          <li>Avtomatik sürət qutusu 4-sürətlidir — köhnəlmiş və biraz gecikir</li>
+          <li>Yüksək sürətlərdə yol və külək səs-küyü duyulur</li>
+          <li>Salon materialları çox sadədir — hər yerdə sərt plastik</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Gerçəkdən praktik büdcə avtomobili. Minimum qiymətə maksimum yük yeri lazımdırsa, Cobalt gözləntiləri aşır. Şıq deyil, lakin illər boyu etibarlı şəkildə A-dan B-yə aparacaq.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 6 ===================== -->
+<div class="car-card" id="car6">
+  <div class="car-header">
+    <div class="car-num">06</div>
+    <div class="car-title">
+      <h2>Hyundai Accent / Solaris (2010–2017)</h2>
+      <div class="tagline">Nəhəng bazar iştirakı olan sınaqdan keçirilmiş Koreya kompaktı</div>
+    </div>
+    <div class="badge">🔩 İstifadəsi Asan</div>
+  </div>
+  <div class="photo-slot" id="photo6">
+    <img class="preview" src="" alt="Hyundai Accent / Solaris">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Hyundai Accent / Solaris (2010–2017)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo6')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~6,500–14,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Əla</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Accent/Solaris mahiyyətcə Kia Rio-nun əkiz qardaşıdır. Rio ilə eyni əsası, mühərrikləri və bir çox mexaniki hissəni bölüşür ki, bu da kombinə edilmiş dəstək şəbəkəsinin nəhəng olduğunu bildirir. Solaris adı Rusiya bazarı versiyaları üçün istifadə edilmişdir və Qafqaz bölgəsində çox geniş yayılmışdır. Bu, sıx büdcəli ilk alıcılar üçün əsas avtomobildir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Kia Rio ilə demək olar ki, bütün hissələri bölüşür — ikiqat mövcudluq</li>
+          <li>Şəhər istifadəsi üçün mükəmməl yanacaq qənaəti</li>
+          <li>Azərbaycanda Hyundai diler şəbəkəsi yaxşı qurulmuşdur</li>
+          <li>Avtomatik sürət qutusu hamar və etibarlıdır</li>
+          <li>Böyük arzı ilə ikinci əl bazarında çox rəqabətli qiymət</li>
+          <li>100,000–200,000 km aralığında yaxşı etibarlılıq rekoru</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Yük yeri (400L) yaxşıdır, lakin açılış bir qədər dardır</li>
+          <li>Asqı çox yumşaq tənzimlənib — dağ yollarında yellənir</li>
+          <li>Salon keyfiyyəti əsasdır, xüsusilə köhnə modellər</li>
+          <li>Köhnə bölmələr (2010–2013) alt gövdədə bəzi pas problemləri var</li>
+          <li>Sürmək çox əyləncəli deyil — tamamilə funksionaldır</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Ən yaxşı əlçatan Koreya kompaktı kimi Kia Rio ilə demək olar ki, bərabərdir. Hansının daha təmiz vəziyyəti və tarixi olduğuna əsasən seçin — mexaniki olaraq demək olar ki, eynidir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 7 ===================== -->
+<div class="car-card" id="car7">
+  <div class="car-header">
+    <div class="car-num">07</div>
+    <div class="car-title">
+      <h2>Toyota Yaris / Vitz (2005–2016)</h2>
+      <div class="tagline">Yaponiyanın ən möhkəm kiçik avtomobili</div>
+    </div>
+    <div class="badge">💡 Ağıllı Seçim</div>
+  </div>
+  <div class="photo-slot" id="photo7">
+    <img class="preview" src="" alt="Toyota Yaris / Vitz">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Toyota Yaris / Vitz (2005–2016)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo7')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~4,000–11,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>5–6L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Çox yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★★</span></div>
+    </div>
+    <p class="overview">Toyota Yaris (Yaponiyada Vitz adı ilə satılır) etibarlılıq baxımından əsl əfsanədir. Kiçik ölçüsünə baxmayaraq, bu avtomobil minimal problemlə asanlıqla 300,000+ km keçə bilir. Japon istehsalı ikinci əl avtomobillərinin yüksək qiymətləndirildiyı Azərbaycanda Yapon idxalı kimi xüsusilə məşhurdur. Tələbələr, tək sürücülər və ya mütləq ən aşağı idarəetmə xərclərinə ehtiyacı olan hər kəs üçün Yaris rəqibsizdir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Fövqəladə etibarlılıq rekoru — əsas texniki xidmətlə demək olar ki, məhvedilməzdir</li>
+          <li>Bu siyahıda ən aşağı yanacaq sərfi — ağır şəhər istifadəsi üçün idealdır</li>
+          <li>Sığorta, vergi və saxlama xərcləri çox ucuzdur</li>
+          <li>Bakıda istənilən yerdə park etmək asandır — kompakt ölçülər</li>
+          <li>Köhnə modellər yaxşı vəziyyətdə çox aşağı qiymətə mövcuddur</li>
+          <li>Toyota markası ustaların tanış olduğunu bildirir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Çox kiçik — uzun səfərlərdə 4+ nəfərlik ailə üçün uyğun deyil</li>
+          <li>Yük yeri minimaldır (270L)</li>
+          <li>Yüksək dövrdə mühərrik səs-küyü çox nəzərəçarpandır</li>
+          <li>Köhnə modellər köhnəlir — yalnız əsas xüsusiyyətlər gözləyin</li>
+          <li>Pis kənd yollarında ən rahat deyil</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Həqiqi Yapon etibarlılığına sahib olmağın ən ucuz yolu. İlk avtomobil, ailənin ikinci avtomobili və ya əsasən Bakıda sürən hər kəs üçün mükəmməldir. İdarə etmənin nə qədər ucuza başa gəldiyinə sevgini zamanla hiss edə bilərsiniz.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 8 ===================== -->
+<div class="car-card" id="car8">
+  <div class="car-header">
+    <div class="car-num">08</div>
+    <div class="car-title">
+      <h2>Kia Cerato / Forte (2013–2018)</h2>
+      <div class="tagline">Rio-nun daha böyük, daha zərif qardaşı</div>
+    </div>
+    <div class="badge">👨‍👩‍👧 Ailə Seçimi</div>
+  </div>
+  <div class="photo-slot" id="photo8">
+    <img class="preview" src="" alt="Kia Cerato / Forte">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Kia Cerato / Forte (2013–2018)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo8')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~9,000–20,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6.5–7.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Çox yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Kia Cerato / Forte Koreya kompakt sinifinin ən yaxşı nöqtəsini təmsil edir — Rio-dan daha böyük, baza modellərdən daha zərif və hələ büdcəli alıcılar üçün məna kəsb edən qiymətlərdə mövcuddur. 2014–2017 nəsli daha kəskin dizayn və təkmilləşdirilmiş sürüş keyfiyyəti gətirdi və Azərbaycanlı ikinci əl bazarında xüsusilə məşhurdur.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Daha böyük yük yeri (502L) — həqiqi ailə avtomobili tutumu</li>
+          <li>Qiymət sinfi üçün rahat, yaxşı təchiz edilmiş salon</li>
+          <li>Kia-nın 7 illik zəmanət tarixi yaxşı saxlanmış nümunələrin ümumi olduğunu bildirir</li>
+          <li>Hamar 6-sürətli avtomat sinifindəkilərin ən yaxşılarından biridir</li>
+          <li>Şəhər yanacaq qənaəti ilə magistral rahatlığı arasında yaxşı balans</li>
+          <li>Hyundai Elantra ilə çoxunu bölüşür — əla ehtiyat hissəsi mövcudluğu</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Ekvivalent il/yürüş üçün Accent/Rio-dan daha bahalıdır</li>
+          <li>Turbolu versiyalar (1.6T) texniki xidmət üçün daha bahalıdır</li>
+          <li>Erkən əyləc diski aşınması haqqında bəzi hesabatlar var</li>
+          <li>Sedan versiyasının arxa oturacaqlarında hündür boylu sərnişinlər üçün məhdud baş yeri</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Büdcə kateqoriyasında ən yaxşı universal ailə sedanı. Dörd yetkin daşıyırsınızsa və ya yük yerinə ehtiyacınız varsa, Cerato Rio və Accent üzərindəki modest artıma dəyər. Əla seçim.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 9 ===================== -->
+<div class="car-card" id="car9">
+  <div class="car-header">
+    <div class="car-num">09</div>
+    <div class="car-title">
+      <h2>Nissan Almera / Sentra (2013–2018)</h2>
+      <div class="tagline">Nissandan diqqətdən kənar etibarlılıq</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo9">
+    <img class="preview" src="" alt="Nissan Almera / Sentra">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Nissan Almera / Sentra (2013–2018)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo9')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~7,000–16,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6.5–7.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Nissan Almera (bəzi bazarlarda Sentra kimi tanınan) Azərbaycanda möhkəm, qiymətləndirilməmiş bir seçimdir. Nissan ölkədə yaxşı qurulmuş vəziyyətdədir və Almera Renault Logan platforması ilə ümumi mexanikadan istifadə edir — bu da ehtiyat hissə hovuzunu ikiqat artırır. Qiymətinə görə rahat, geniş və diqqəti çəkəcək dərəcədə yaxşı qurulmuşdur.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Geniş salon — sinifindəkilərin ən genişlərindən biri</li>
+          <li>Uzun şəhərlərarası səfərlərdə çox rahat sürmə</li>
+          <li>Bakıda Nissan servis mərkəzləri mövcuddur</li>
+          <li>Renault-Nissan Alliance hissələrini bölüşür — geniş mövcudluq</li>
+          <li>CVT avtomat hamar və yanacaq qənaətlidir</li>
+          <li>Rəqabətə nisbətən yaxşı dəyər təklifi</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Yüksək yürüşdə maye dəyişiklikləri atlandıqda CVT köçürücüsü sıradan çıxa bilər</li>
+          <li>Salon dizaynı kifayət qədər sadə və köhnədir</li>
+          <li>Xarici görünüş görünməzliyə qədər mühafizəkardır</li>
+          <li>Sürmək ən motivasiyalı deyil — sükan yaxşı duyğu vermir</li>
+          <li>Yenidən satış dəyəri Koreya ekvivalentindən bir az aşağıdır</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Koreya rəqibləri xeyrinə çox vaxt diqqətsiz qalan rahat, praktik seçim. Yaxşı qiymətə yaxşı saxlanmış bir nümunə tapırsınızsa, onu rədd etməyin — Almera gerçəkdən möhkəm bir avtomobildir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 10 ===================== -->
+<div class="car-card" id="car10">
+  <div class="car-header">
+    <div class="car-num">10</div>
+    <div class="car-title">
+      <h2>Chery Tiggo 4 Pro (2022–indiyədək)</h2>
+      <div class="tagline">Çinin büdcəli SUV axını Azərbaycana gəlir</div>
+    </div>
+    <div class="badge">🆕 Ən Yaxşı Yeni Çin</div>
+  </div>
+  <div class="photo-slot" id="photo10">
+    <img class="preview" src="" alt="Chery Tiggo 4 Pro">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Chery Tiggo 4 Pro (2022–indiyədək)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo10')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~22,000–30,000 AZN (yeni)</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Böyüyən şəbəkə</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Çin avtomobilləri 2024–2025-ci illərdə Azərbaycan bazarına partlayışla daxil oldu. Chery Tiggo 4 Pro büdcə qiymətinə yeni olaraq mövcud olan ən dəyər yüklü SUV-lardan biridir. Böyük toxunuş ekranı, geri görüntü kamerası, ADAS sistemləri, panoramik dam — eyni qiymətdə Yapon və ya Koreya rəqiblərindən sadəcə əldə edə bilməyəcəyiniz xüsusiyyətlərlə gəlir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Qiymət üçün müstəsna xüsusiyyət məzmunu — çox daha bahalı avtomobil kimi hiss etdirir</li>
+          <li>SUV kuzov Azərbaycanın qarışıq yolları üçün daha yaxşı quru yerdən klirensi verir</li>
+          <li>Müasir təhlükəsizlik texnologiyası: zolaq yardımçısı, avtomatik fövqəladə əyləclər, kor zona xəbərdarlığı</li>
+          <li>Geniş yük yeri və praktik salon planı</li>
+          <li>Çin brendlərinin Bakıda böyüyən diler mövcudluğu var</li>
+          <li>Yeni avtomobil zəmanəti rahatlıq verir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Uzunmüddətli etibarlılıq hələ Azərbaycan bazarında sübut olunmayıb</li>
+          <li>Müstəqil ustalar Çin avtomobilləri ilə daha az tanışdır</li>
+          <li>Ehtiyat hissəsi təchizat zənciri Yapon/Koreya rəqiblərindən daha yavaş ola bilər</li>
+          <li>Yenidən satış dəyəri hələ qeyri-müəyyəndir — bazar hələ formalaşır</li>
+          <li>Bəzi elektron sistemlər sadə təmirlər üçün həddindən artıq mürəkkəbdir</li>
+          <li>Marka qavrayışı ikinci əldə necə qiymətləndiriləcəyinə təsir edə bilər</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Manata görə ən çox xüsusiyyəti istəyirsinizsə və Azərbaycanda Çin avtomobillərini erkən qəbul etməkdən narahat deyilsinizsə, Tiggo 4 Pro gerçəkdən maraqlı dəyər təqdim edir. Yeni alın, zəmanəti saxlayın və texniki xidmətə diqqət edin.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 11 ===================== -->
+<div class="car-card" id="car11">
+  <div class="car-header">
+    <div class="car-num">11</div>
+    <div class="car-title">
+      <h2>Mitsubishi Lancer (2007–2015)</h2>
+      <div class="tagline">Yaponiyanın idmançı kompaktı — pis yollarda sınaqdan keçirilmiş</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo11">
+    <img class="preview" src="" alt="Mitsubishi Lancer">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Mitsubishi Lancer (2007–2015)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo11')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~6,000–15,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Mitsubishi tarixən Azərbaycanın ən çox satılan brendlərinin ilk 5-liyindən biri olmuşdur, buna görə Lancer geniş dəstək şəbəkəsinə malikdir. 1.5L və 1.6L mühərrikləri sadə və davamlıdır, avtomobil pis yollarda inamlı sürüşü ilə tanınır. Seqmentdəki ən yaxşı görünən büdcəli seçimlərdən biri olup bu da yenidən satışa kömək edir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Mitsubishi Azərbaycanda güclü mövcudluğa malikdir — ehtiyat hissə və ustalar mövcuddur</li>
+          <li>Büdcəli avtomobillər arasında ən idmançı görünüşlülərdən biri — görünüşünü saxlayır</li>
+          <li>Möhkəm konstruksiya keyfiyyəti — qapılar və gövdə əhəmiyyətli hiss verir</li>
+          <li>Kompakt sedan üçün yaxşı quru yerdən klirensi</li>
+          <li>Sonrakı modellərə hamar CVT avtomat mövcuddur</li>
+          <li>Uzun servis ömrü ilə çox etibarlı mühərriklər</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Yanacaq sərfi Koreya ekvivalentlərindən bir az yüksəkdir</li>
+          <li>Diqqətsizlik olduqda CVT dəyişdirməsi bahalıdır</li>
+          <li>Salon keyfiyyəti Koreya rəqiblərindən geridə qalır — bir az köhnə hiss verir</li>
+          <li>Artıq istehsal edilmir — ikinci əl bazarına az sayda yeni model daxil olur</li>
+          <li>Təxminən 10 yaşından arxa qövslər və astanalar ətrafında pas inkişaf edə bilər</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Koreya rəqibləri ilə öz mövqeyini qoruyan şık, etibarlı seçim. İdmançı qiymətlər ödəmədən idmançı görünüş istəyirsinizsə, xüsusilə yaxşıdır. Ən aşağı idarəetmə xərcləri üçün 1.5L atmosfer mühərrikinə üstünlük verin.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 12 ===================== -->
+<div class="car-card" id="car12">
+  <div class="car-header">
+    <div class="car-num">12</div>
+    <div class="car-title">
+      <h2>Honda Civic (2006–2015)</h2>
+      <div class="tagline">İkinci əl qiymətinə Yaponiyanın keyfiyyət etalonu</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo12">
+    <img class="preview" src="" alt="Honda Civic">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Honda Civic (2006–2015)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo12')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~7,000–17,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6.5–8L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı (bəziləri nadirdir)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Honda Civic-lər dünya üzrə mükəmməl etibarlılığı, hamar VTEC mühərrikləri və yüksək konstruksiya keyfiyyəti ilə tanınır. Honda Azərbaycanda Toyota və ya Hyundai qədər dominant olmasa da, Civic hələ sadiq bir izləyicisinə malikdir və yüksək yürüşlü nümunələr hələ də satın alınmağa dəyər mexaniki möhkəmliyi ehtiva edir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Honda-nın VTEC mühərrikləri məşhur etibarlılığı və hamamlığı ilə tanınır</li>
+          <li>Salon keyfiyyəti və idarəetmə elementləri rəqiblərdən daha premium hiss verir</li>
+          <li>Sürmək əyləncəlidir — Koreya alternativlərindən nəzərə çarpacaq dərəcədə yaxşı sükan hissi</li>
+          <li>Güclü qlobal nüfuz alıcıları əmin edir və yenidən satışa kömək edir</li>
+          <li>Yaxşı saxlanılarsa, yüksək yürüşlü nümunələr hələ etibarlıdır</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Bəzi xüsusi hissələri yerli olaraq tapmaq çətindir — sifariş tələb oluna bilər</li>
+          <li>Toyota/Hyundai ilə müqayisədə daha az Honda ixtisaslı usta var</li>
+          <li>8-ci nəsil (2006–2011) arxa asqı dizaynı zamanla nəzərəçarpacaq dərəcədə aşınır</li>
+          <li>Yanacaq sərfi Toyota Corolla-dan bir az yüksəkdir</li>
+          <li>Rusiya üzərindən idxal edilmiş bəzi modellər gizli tarix problemlərinə malik ola bilər</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Sənədləşdirilmiş servis tarixi olan təmiz bir nümunə taparsanız, sahib olmaq üçün gözəl bir avtomobildir. Civic-in mexaniki keyfiyyəti əladır — sadəcə tarixi yoxlayın və öhdəlik götürməzdən əvvəl ehtiyat hissəsi mövcudluğunu yoxlayın.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 13 ===================== -->
+<div class="car-card" id="car13">
+  <div class="car-header">
+    <div class="car-num">13</div>
+    <div class="car-title">
+      <h2>Suzuki Swift (2010–2017)</h2>
+      <div class="tagline">Çevik, qənaətli və təəccüblü dərəcədə möhkəm</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo13">
+    <img class="preview" src="" alt="Suzuki Swift">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Suzuki Swift (2010–2017)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo13')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~5,000–11,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>5.5–6.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Orta</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Suzuki Swift mükəmməl etibarlılıq göstəriciləri ilə gerçəkdən sürmək əyləncəli kiçik bir avtomobildir. Yüngül, çevik və son dərəcə yanacaq qənaətlidir. Azərbaycanda Suzuki mövcuddur və Swift həvəskar sahiblər cəmiyyətinə malikdir. 1.2L mühərrik sinifindəkilər arasında ən qənaətli və uzunömürlülərdən biridir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Gerçəkdən sürməsi əyləncəlidir — bu qiymətdə siyahıdakı ən əyləncəli avtomobil</li>
+          <li>Mükəmməl yanacaq qənaəti — siyahıdakı ən aşağılardan biri</li>
+          <li>Yüngül çəki şin və əyləclərin ortalamadan uzun ömürlü olması deməkdir</li>
+          <li>Qlobal olaraq çox etibarlı mexaniki rekord</li>
+          <li>Kompakt ölçülər sayəsində Bakı trafikini keçmək asandır</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Ehtiyat hissəsi mövcudluğu Yapon/Koreya əsas brendlərindən daha məhduddur</li>
+          <li>Çox kiçik salon — dörd yetkin və ya baqaj üçün qeyri-praktikdir</li>
+          <li>Əsas avtomobil kimi ailələr üçün uyğun deyil</li>
+          <li>Magistrallarda yüksək sürətdə açıq və səs-küylü hiss verir</li>
+          <li>Azərbaycanda nisbətən az Suzuki ixtisaslı usta var</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> İkinci ailə avtomobili və ya tək gənc sürücü üçün mükəmməldir. Sürməyi sevirsinizsə və yanacaq xərclərindən nifrət edirsinizsə, Swift büdcə sinifində nadir bir nemətdir. Sadəcə ailə və ya yük daşıma avtomobili kimi məhdudiyyətlər barədə realist olun.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 14 ===================== -->
+<div class="car-card" id="car14">
+  <div class="car-header">
+    <div class="car-num">14</div>
+    <div class="car-title">
+      <h2>Renault Logan / Dacia Logan (2013–2020)</h2>
+      <div class="tagline">Fransız mühəndisliyi, büdcə DNT-si, inanılmaz möhkəmlik</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo14">
+    <img class="preview" src="" alt="Renault Logan">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Renault Logan / Dacia Logan (2013–2020)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo14')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~5,500–13,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı (Renault-Nissan Alyansı)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Renault Logan xüsusi olaraq inkişaf etməkdə olan bazarlarda sərfəli şəkildə satılmaq üçün dizayn edilmişdir — bu da onun sadəlik, davamlılıq və təmir asanlığı üçün əvvəldən mühəndis edildiyi anlamına gəlir. Nissan Almera ilə eyni Renault-Nissan Alyansı əsasını istifadə edir ki, bu da ehtiyat hissəsi mövcudluğuna böyük kömək edir. Bu gerçəkdən möhkəm bir avtomobildir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Xüsusi olaraq ağır şəraitdə davamlılıq üçün dizayn edilib — Azərbaycana mükəmməl uyğundur</li>
+          <li>Mükəmməl yük yeri (510L) — qiymətinə görə sinifin ən yaxşısı</li>
+          <li>Sedan üçün qeyri-adi yüksək quru yerdən klirensi — pis yolları yaxşı idarə edir</li>
+          <li>Texniki xidmət çox ucuzdur — minimal mürəkkəblik</li>
+          <li>Renault-Nissan ehtiyat hissəsi şəbəkəsi əla təchizat zənciri dəstəyi verir</li>
+          <li>Geniş temperatur aralığında etibarlı — Azərbaycan üçün vacibdir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Salon gerçəkdən sadədir — rahatlıq üçün deyil, funksiya üçün dizayn edilib</li>
+          <li>Dalğalanmış və ya daş döşəmə yollarında sürüş sərtdir</li>
+          <li>Üst komplektasiyalarda belə çox lüks və ya texnoloji xüsusiyyət yoxdur</li>
+          <li>Sönük dizayn — heç kimin diqqətini çəkmir</li>
+          <li>Bölgə ərazilərindəki Toyota və ya Hyundai ilə müqayisədə daha az Renault servis mərkəzi</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Logan büdcə sinifinin gizli incisidir. Azərbaycan kimi bazarlar üçün sözü söz mənasında dizayn edilmişdir. Sadə salonu qəbul edə bilsəniz, aşağı idarəetmə xərcləri və heyrətamiz davamlılıqla mükafatlandırılacaqsınız.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 15 ===================== -->
+<div class="car-card" id="car15">
+  <div class="car-header">
+    <div class="car-num">15</div>
+    <div class="car-title">
+      <h2>Changan CS35 Plus (2019–2023)</h2>
+      <div class="tagline">Çin kompakt SUV-u — qiyməti üçün yaxşı təchiz edilmiş</div>
+    </div>
+    <div class="badge">🚙 Büdcəli SUV</div>
+  </div>
+  <div class="photo-slot" id="photo15">
+    <img class="preview" src="" alt="Changan CS35 Plus">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Changan CS35 Plus (2019–2023)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo15')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~14,000–22,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Böyüyür</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Changan Qiyuan alt-brendinin 2025-ci il satış cədvəllərini üstələdiyi Azərbaycanda ən sürətli böyüyən brendlərdən biridir. CS35 Plus əksər Yapon rəqiblərindən daha aşağı qiymətə gerçək SUV praktikliyini təklif edən köhnə, lakin yaxşı sınaqdan keçirilmiş bir kompakt SUV-dur. Xüsusiyyətlərlə yüklüdür və olduğundan daha bahalı görünən müasir dizayna malikdir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>SUV quru yerdən klirensi Azərbaycanın çuxurlu yollarını və kənd yollarını idarə edir</li>
+          <li>Böyük toxunuş ekranı, geri görüntü kamerası və müasir xüsusiyyətlər standart olaraq gəlir</li>
+          <li>Changan-ın Bakıda sürətlə böyüyən mövcudluğu daha yaxşı ehtiyat hissəsi çıxışı deməkdir</li>
+          <li>Yaxşı saxlama həlləri ilə geniş salon</li>
+          <li>Müasir 1.4T turbolu mühərrik dinamik və qənaətlidir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Turbolu mühərrik premium baxım tələb edir — texniki xidmətləri keçmək risklidir</li>
+          <li>CVT sürət qutusu ağır yük altında sarsaq ola bilər</li>
+          <li>Azərbaycanın iqlimindəki uzunmüddətli davamlılıq hələ tam olaraq müəyyənləşdirilməyib</li>
+          <li>Yenidən satış dəyərinin trayektoriyası hələ qeyri-müəyyəndir</li>
+          <li>Bəzi keyfiyyət nəzarəti uyğunsuzluqları bildirilmişdir</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Xüsusiyyətlər və praktiklik baxımından meyvə verən cəsarətli seçim. Changan-ın Azərbaycanda partlayıcı böyüməsi nəzərə alındıqda (2025-ci ildə ən böyük qlobal bazarlarından biri), servis şəbəkəsi inkişaf etməyə davam etməlidir. Yapon marka qiymətləri olmadan SUV üstünlüklərini istəyən alıcılar üçün yaxşıdır.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 16 ===================== -->
+<div class="car-card" id="car16">
+  <div class="car-header">
+    <div class="car-num">16</div>
+    <div class="car-title">
+      <h2>Ford Focus (2011–2018)</h2>
+      <div class="tagline">Avropa hissi, idmançı dinamika, büdcə qiyməti</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo16">
+    <img class="preview" src="" alt="Ford Focus">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Ford Focus (2011–2018)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo16')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~8,000–18,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Orta-yaxşı</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Ford Focus büdcə sinifindəkilərin ən yaxşı sürülən avtomobillərindən biridir — cəsarətli sükan, həssas idarəetmə və gerçəkdən Avropalı hiss verən keyfiyyətli salon. Azərbaycanda Focus, tipik Koreya və ya Yapon alternativlərindən daha cəlbedici bir şey istəyən sürücülər arasında izləyicisi var. Bakıda Ford servis nöqtələri mövcuddur.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Bu siyahıdakı ən yaxşı idarəetmə dinamikası — sürmək gerçəkdən məmnunedicidir</li>
+          <li>Premium salon hissi və erqonomika</li>
+          <li>Hetçbek kuzov seçimi əla praktiklik təqdim edir</li>
+          <li>İkinci əl bazarında çox sayda komplektasiya səviyyəsi və mühərrik seçimi mövcuddur</li>
+          <li>Bakıdakı Ford dilerlərinin yaxşı dəstəyi var</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>PowerShift DCT (ikili debriyajlı) avtomat etibarlılıq problemləri ilə məşhurdur — mütləq qaçının</li>
+          <li>1.0L EcoBoost turbo düzgün texniki xidmət göstərilmədikdə bahalı təmirə başa gələ bilər</li>
+          <li>Hissələri Koreya alternativlərindən bahalıdır</li>
+          <li>Asqı yastıqları və dayaq qolları Yapon rəqiblərindən daha tez aşınır</li>
+          <li>Alt kuzov panellərində gözləniləndən erkən pas görünür</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Yalnız 1.6L atmosfer mühərriki və mexaniki sürət qutusu ilə, ya da köhnə 4-sürətli avtomat ilə alın — PowerShift DCT-dən hər bahasına qaçın. Düzgün spesifikasiyanı tapsanız, Focus gerçəkdən istifadəsi məmnunedici bir avtomobildir. Koreya alternativlərindən bir az daha çox araşdırma tələb edir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 17 ===================== -->
+<div class="car-card" id="car17">
+  <div class="car-header">
+    <div class="car-num">17</div>
+    <div class="car-title">
+      <h2>Volkswagen Polo (2010–2019)</h2>
+      <div class="tagline">Kompakt büdcədə Alman dəqiqliyi</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo17">
+    <img class="preview" src="" alt="Volkswagen Polo">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Volkswagen Polo (2010–2019)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo17')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~8,500–18,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>6–7.5L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Orta (Koreyadan bahalı)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Volkswagen Polo büdcə sinifinə gerçək Alman mühəndislik keyfiyyətini gətirir. Qiymət etiketinin göstərəcəyindən nəzərə çarpacaq dərəcədə daha möhkəm və zərif hiss verir — gövdə, qapılar və salon premium ağırlığa malikdir. VW-nin Bakıda diler mövcudluğu var. Bununla belə, Asiya rəqiblərindən daha yüksək texniki xidmət xərcləri ilə gəlir ki, alıcılar bunu hesaba almalıdır.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Bu siyahıdakı istənilən avtomobil arasında ən yaxşı konstruksiya keyfiyyəti hissi</li>
+          <li>Zərif, sakit salon — hərəkətdə premium hiss verir</li>
+          <li>Güclü yenidən satış dəyəri — VW markaşı Azərbaycanda yaxşı qiymətləndirilir</li>
+          <li>1.6L MPI mühərrik (Rusiya spec Polo) etibarlı və sadədir</li>
+          <li>Mükəmməl təhlükəsizlik reytinqləri</li>
+          <li>Prestij faktoru — Bakı sosial dairələrindən yüksək qiymətləndirilir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Texniki xidmət və ehtiyat hissəsi xərcləri Koreya/Yapon rəqiblərindən əhəmiyyətli dərəcədə yüksəkdir</li>
+          <li>DSG ikili debriyajlı sürət qutusunun etibarlılıq problemləri var — MPI/mexaniki ilə gedin</li>
+          <li>VW elektronikasının diaqnozu və təmiri bahalı ola bilər</li>
+          <li>Yaxşı VW ixtisaslı usta tələb edir — müstəqil ustalarda düzgün alətlər olmaya bilər</li>
+          <li>Yük yeri oxşar qiymətlərdəki Koreya rəqiblərindən daha kiçikdir</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> 1.6L MPI Polo alın (Rusiyada istehsal edilmişdir — geniş mövcuddur) və bütün DSG təchizatlı nümunələrdən qaçın. Bu xüsusi versiya keyfiyyətli Alman paketlənməsinin içərisindəki sadə, etibarlı mexanikaya malikdir. Kia-dan daha çox idarə etməyə başa gəlir, lakin bir çox alıcı keyfiyyət fərqinin bunu haqladığını hiss edir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 18 ===================== -->
+<div class="car-card" id="car18">
+  <div class="car-header">
+    <div class="car-num">18</div>
+    <div class="car-title">
+      <h2>Geely Emgrand EC7 (2014–2020)</h2>
+      <div class="tagline">Çinin Volvo dəstəkli sedanı — əksəriyyətin gözlədiyindən yaxşısı</div>
+    </div>
+  </div>
+  <div class="photo-slot" id="photo18">
+    <img class="preview" src="" alt="Geely Emgrand EC7">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Geely Emgrand EC7 (2014–2020)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo18')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~5,000–11,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Orta (inkişaf edir)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★☆☆</span></div>
+    </div>
+    <p class="overview">Volvo-ya sahib olan Çin brendinin istehsal etdiyi Geely, Volvo mühəndislik ortaqlıqlarından faydalanan avtomobillər istehsal edir. Emgrand EC7 keçmiş Sovet bazarlarında gerçək hörmət qazanan ilk Çin avtomobillərindən biri idi. Təqdim edilə biləcək görünüşü var, rahat sürüş keyfiyyətinə malikdir və son dərəcə aşağı qiymətə ağlabatan konstruksiya keyfiyyəti təklif edir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Layiqli keyfiyyətli bir Çin avtomobilinə son dərəcə sərfəli giriş nöqtəsi</li>
+          <li>Volvo təsirli mühəndislik ona bəzi Çin rəqibləri üzərində keyfiyyət üstünlüyü verir</li>
+          <li>Rahat sürüş keyfiyyəti — asqı yol qüsurlarını yaxşı udir</li>
+          <li>Yaxşı salon sahəsi və praktik plan</li>
+          <li>Gündəlik alınması və idarə edilməsi ucuzdur</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Uzunmüddətli etibarlılıq Yapon/Koreya standartlarından aşağıdır</li>
+          <li>Ehtiyat hissəsi mövcudluğu ən zəif nöqtədir — bəzi maddələri Çindən sifariş etmək lazımdır</li>
+          <li>Marka prestiji aşağı qalır — ictimai qavrayışa və yenidən satışa təsir edir</li>
+          <li>Müstəqil ustaların tanışlığı məhduddur</li>
+          <li>Köhnə nümunələr (2017-dən əvvəl) bəzi pas və elektrik problemləri yaşamışdır</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Emgrand yalnız gerçəkdən büdcəsi məhdud olan və Koreya və ya Yapon alternativini ödəyə bilməyən alıcılara tövsiyə edilir. Nüfuzunun göstərdiyi qədər yaxşıdır, lakin öhdəlik götürməzdən əvvəl yerli ehtiyat hissəsi mövcudluğunu təmin etmədən almayın.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 19 ===================== -->
+<div class="car-card" id="car19">
+  <div class="car-header">
+    <div class="car-num">19</div>
+    <div class="car-title">
+      <h2>Toyota Camry (2011–2017, XV50)</h2>
+      <div class="tagline">İddiallı büdcəli alış — ikinci əl qiymətinə premium</div>
+    </div>
+    <div class="badge">👑 Status Seçimi</div>
+  </div>
+  <div class="photo-slot" id="photo19">
+    <img class="preview" src="" alt="Toyota Camry XV50">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Toyota Camry XV50 (2011–2017)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo19')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~14,000–30,000 AZN</span></div>
+      <div class="fact">⛽ Yanacaq <span>8–10L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Əla</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★★</span></div>
+    </div>
+    <p class="overview">Toyota Camry XV50 ikinci əl bazarında büdcə qiymətlərinə mövcud olan lüks səviyyəsinə yaxın bir sedandır. Azərbaycanda Camry-nin nəhəng bir nüfuzu var — status, rahatlıq və Yapon etibarlılığı ilə əlaqələndirilir. 2.5L və 3.5L V6 mühərrikləri ümumiyyətlə istehsal edilmiş ən etibarlı mühərriklərdən sayılır. Büdcənizi istifadə edilmiş bir Camry almaq üçün uzada bilsəniz, sizi böyük mükafatlandırır.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Ən yaxşı Toyota əfsanəvi etibarlılığı — 300,000+ km potensialı</li>
+          <li>Azərbaycanda son dərəcə prestijli — sosial və peşəkar qapılar açır</li>
+          <li>Uzun səfərlərdə müstəsna rahatlıq — Bakıdan Lənkərana qədər rahatlıq</li>
+          <li>Mükəmməl ehtiyat hissəsi mövcudluğu — Corolla ilə eyni şəbəkə</li>
+          <li>Sürücü və sərnişinlərə xidmət edən premium salon keyfiyyəti</li>
+          <li>2.5L 2AR-FE mühərrik demək olar ki, məhvedilməzdir</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Bu siyahıdakı kiçik avtomobillərdən əhəmiyyətli dərəcədə yüksək yanacaq sərfi</li>
+          <li>Büdcə aralığımızın yuxarısındadır — daha çox ilkin investisiya tələb edir</li>
+          <li>Daha böyük gövdə Bakı şəhərinin parklanmasını daha çətin edir</li>
+          <li>V6 modellərin idarəetmə xərcləri yüksəkdir</li>
+          <li>Yüksək tələbat yaxşı, təmiz nümunələrin tez əldən getdiyi anlamına gəlir</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Yaxşı vəziyyətdə bir Camry XV50 ödəyə bilsəniz, tərəddüdsüz alın. Bu, hər zaman istehsal edilmiş ən yaxşı universal avtomobillərdən biridir və xüsusilə Azərbaycanda status, etibarlılıq və ehtiyat hissəsi mövcudluğunun birləşməsi onu müstəsna bir dəyər edir. On il saxlayacağınız bir avtomobildir.</div>
+  </div>
+</div>
+
+<!-- ===================== CAR 20 ===================== -->
+<div class="car-card" id="car20">
+  <div class="car-header">
+    <div class="car-num">20</div>
+    <div class="car-title">
+      <h2>Haval Jolion (2021–indiyədək)</h2>
+      <div class="tagline">Çinin ən yaxşı kompakt SUV-u — müasir, şık, yaxşı təchizatlı</div>
+    </div>
+    <div class="badge">🌟 Yüksələn Ulduz</div>
+  </div>
+  <div class="photo-slot" id="photo20">
+    <img class="preview" src="" alt="Haval Jolion">
+    <span class="photo-icon">📷</span>
+    <span class="photo-label">Haval Jolion (2021–indiyədək)</span>
+    <span class="photo-hint">Foto yükləmək üçün klikləyin</span>
+    <input type="file" accept="image/*" onchange="handlePhoto(this,'photo20')">
+  </div>
+  <div class="car-body">
+    <div class="quick-facts">
+      <div class="fact">💰 Qiymət <span>~22,000–32,000 AZN (yeni/yarıyeni)</span></div>
+      <div class="fact">⛽ Yanacaq <span>7–8L/100km</span></div>
+      <div class="fact">🔧 Ehtiyat hissələri <span>Yaxşı (böyüyür)</span></div>
+      <div class="fact">🌟 Etibarlılıq <span>★★★★☆</span></div>
+    </div>
+    <p class="overview">Great Wall-ın Haval Jolion-u bölgədə ən çox danışılan büdcəli SUV-lardan birinə çevrilmişdir. Daha bahalı SUV-ları utandıran qeyri-adi yetkin dizayn, yüksək keyfiyyətli salon və hərtərəfli xüsusiyyət siyahısı ilə gəlir. 1.5T turbo mühərrik VW ekvivalentindən fərqli olaraq kifayət qədər etibarlı olduğunu sübut edən 7-sürətli DCT ilə cütləşdirilib. Bu, Çinin keyfiyyət və arzulanırlıq baxımından ən böyük irəliləyişini təmsil edir.</p>
+    <div class="pros-cons">
+      <div class="pros">
+        <h4>✅ Niyə Tövsiyə Edirik</h4>
+        <ul>
+          <li>Salon keyfiyyəti iki qat qiymətli avtomobillərlə rəqabət aparır — gerçəkdən heyranedicidir</li>
+          <li>Böyük toxunuş ekranı, 360 dərəcəlik kamera, ADAS, panoramik dam yuxarı komplektasiyalarda standartdır</li>
+          <li>Bütün Azərbaycan yol növləri üçün praktik olan geniş quru yerdən klirensi ilə SUV kuzov</li>
+          <li>Güclü zəmanət tərtibi daha yeni bir alışda rahatlıq verir</li>
+          <li>Haval-ın Bakıda böyüyən diler mövcudluğu var</li>
+          <li>Şık dizayn — hal-hazırda Azərbaycanda istənilən qiymətdə ən gözəl görünən avtomobillərdən biri</li>
+        </ul>
+      </div>
+      <div class="cons">
+        <h4>❌ Çatışmazlıqlar</h4>
+        <ul>
+          <li>Yüksək istilik şəraitindəki DCT sürət qutusunun uzunmüddətli davamlılığı hələ müşahidə olunmaqdadır</li>
+          <li>1.5T turbo mühərrik premium yanacaq və ciddi yağ dəyişikliyi intervalları tələb edir</li>
+          <li>Azərbaycanda Çin SUV-ları üçün yenidən satış dəyərləri hələ oturaqlaşır</li>
+          <li>Bəzi elektron xüsusiyyətlər qəbul edə bilər — proqram təminatı yeniləmələri lazımdır</li>
+          <li>Yapon alternativləri qədər mexaniki sadə deyil — zamanla daha çox problem yarana bilər</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict"><strong>Qiymətləndirmə:</strong> Haval Jolion bu siyahıda pul xərci baxımından ən maraqlı avtomobildir. Çin avtomobillərinin dramatik dərəcədə yetkinləşdiyini nümayiş etdirir. Büdcə qiymətinə premium SUV-un xüsusiyyətlərini və görünüşünü istəyən alıcılar üçün Jolion cazibədar bir təklifdir. Yaxşı texniki xidmət göstərin və mükəmməl xidmət etməlidir.</div>
+  </div>
+</div>
+
+<!-- SUMMARY TABLE -->
+<div class="intro-box" style="margin-top:0;">
+  <h2>📊 Sürətli Müqayisə Cədvəli</h2>
+  <p style="margin-bottom:16px;">Prioritetlərinizə əsasən seçiminizi daraltmaq üçün bu cədvəldən istifadə edin:</p>
+  <table style="width:100%; border-collapse:collapse; font-size:0.88em;">
+    <thead>
+      <tr style="background:#0d3b6e; color:white; text-align:left;">
+        <th style="padding:8px 10px;">#</th>
+        <th style="padding:8px 10px;">Avtomobil</th>
+        <th style="padding:8px 10px;">Ən Yaxşı</th>
+        <th style="padding:8px 10px;">Qiymət Aralığı</th>
+        <th style="padding:8px 10px;">Etibarlılıq</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">1</td><td><b>Toyota Corolla</b></td><td>Universal ən yaxşı alış</td><td>12k–28k AZN</td><td>⭐⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">2</td><td><b>Hyundai Elantra</b></td><td>Ailə dəyərli sedan</td><td>8k–18k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">3</td><td><b>Kia Rio</b></td><td>Şəhər qənaəti</td><td>6k–14k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">4</td><td><b>Lada Vesta</b></td><td>Ən ucuz yeni seçim</td><td>9k–16k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">5</td><td><b>Chevrolet Cobalt</b></td><td>Yük yeri + büdcə</td><td>7k–16k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">6</td><td><b>Hyundai Accent</b></td><td>İlk dəfə alıcı</td><td>6.5k–14k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">7</td><td><b>Toyota Yaris</b></td><td>Ən aşağı idarəetmə xərci</td><td>4k–11k AZN</td><td>⭐⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">8</td><td><b>Kia Cerato</b></td><td>Ailə sedanı addımı</td><td>9k–20k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">9</td><td><b>Nissan Almera</b></td><td>Rahatlıq + məkan</td><td>7k–16k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">10</td><td><b>Chery Tiggo 4 Pro</b></td><td>Xüsusiyyət dolu SUV (yeni)</td><td>22k–30k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">11</td><td><b>Mitsubishi Lancer</b></td><td>İdmançı görünüş + etibarlılıq</td><td>6k–15k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">12</td><td><b>Honda Civic</b></td><td>Keyfiyyət + sürüş hissi</td><td>7k–17k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">13</td><td><b>Suzuki Swift</b></td><td>Əyləncə + qənaət</td><td>5k–11k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">14</td><td><b>Renault Logan</b></td><td>Davamlılıq + yük yeri</td><td>5.5k–13k AZN</td><td>⭐⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">15</td><td><b>Changan CS35 Plus</b></td><td>Büdcəli SUV xüsusiyyətləri</td><td>14k–22k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">16</td><td><b>Ford Focus</b></td><td>Ən yaxşı idarəetmə dinamikası</td><td>8k–18k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">17</td><td><b>VW Polo (1.6 MPI)</b></td><td>Alman keyfiyyəti hissi</td><td>8.5k–18k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">18</td><td><b>Geely Emgrand EC7</b></td><td>Ultra-büdcə seçimi</td><td>5k–11k AZN</td><td>⭐⭐⭐</td></tr>
+      <tr style="background:#f0f6ff;"><td style="padding:7px 10px;">19</td><td><b>Toyota Camry XV50</b></td><td>Status + etibarlılıq</td><td>14k–30k AZN</td><td>⭐⭐⭐⭐⭐</td></tr>
+      <tr><td style="padding:7px 10px;">20</td><td><b>Haval Jolion</b></td><td>Premium hissli yeni SUV</td><td>22k–32k AZN</td><td>⭐⭐⭐⭐</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="intro-box">
+  <h2>🛡️ Azərbaycan üçün Əsas Alış Məsləhətləri</h2>
+  <p><strong>Texniki baxış (ÖTƏM) yoxlayın:</strong> Azərbaycanda bütün nəqliyyat vasitələri bu sertifikata ehtiyac duyur. Almadan əvvəl etibarlı olduğundan əmin olun.</p>
+  <p><strong>Yalnız sol sükan:</strong> Azərbaycanda qanuni yol istifadəsi üçün bütün idxal edilmiş avtomobillər sol sükanlı olmalıdır.</p>
+  <p><strong>İdxal tarixini yoxlayın:</strong> Qiymətləri və tarixi çarpaz yoxlamaq üçün Turbo.az və AvtoBaku.com platformalarından istifadə edin.</p>
+  <p><strong>Ehtiyat hissəsi üçün Yapon brendlərinə üstünlük verin:</strong> Toyota və Hyundai/Kia Azərbaycanda ən geniş ehtiyat hissəsi şəbəkəsinə malikdir — xüsusilə Bakıdan kənardaysanız bu vacibdir.</p>
+  <p><strong>Xəzər rütubətini nəzərə alın:</strong> Xüsusilə Rusiya üzərindən idxal edilmiş və ya Bakının sahil zonalarında istifadə edilmiş avtomobillərdə alt gövdəni pas üçün yoxlayın.</p>
+  <p><strong>Sıxışmış büdcədəsinizsə turbolu mühərriklərdən qaçın:</strong> Turbolar premium yanacaq və ciddi texniki xidmət tələb edir — atmosfer mühərrikləri zamanla idarə etmək daha ucuzdur.</p>
+  <p><strong>Yeni Çin avtomobil zəmanəti:</strong> Yeni bir Çin brendini (BYD, Changan, Haval) alırsınızsa, tam diler zəmanəti sənədinə israr edin — bu, bu yeni iştirakçılar üzərindəki əsas qorunmanızdır.</p>
+</div>
+
+<div class="footer-section">
+  <h3>🇦🇿 Azərbaycanda Təhlükəsiz Sürüşlər</h3>
+  <p>Bu bələdçi AvtoBaku.com, Turbo.az və Azərbaycan avtomobil bazarı hesabatlarından alınan məlumatlar da daxil olmaqla 2025–2026-cı il bazar məlumatlarından istifadə edərək tərtib edilmişdir. Qiymətlər daima dəyişən təxmini ikinci əl bazar qiymətlərıdir. Almadan əvvəl həmişə satınalma öncəsi texniki yoxlama aparın və cari qiymətləri yoxlayın.</p>
+  <p style="margin-top:10px;">Bələdçi mart 2026-cı ildə hazırlanmışdır</p>
+</div>
+
+</body>
+</html>
